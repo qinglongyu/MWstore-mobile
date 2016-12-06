@@ -1,0 +1,35 @@
+
+<!--引入样式文件-->
+<!--引入js文件-->
+<div ng-show="show" ng-model="show" class="filter-mask">
+  <div ng-class="{slideInRight: show,animated:show}" turn-page="turn-page" class="filter-wrap">
+    <header>
+      <button ng-click="show=!show" class="cancel fl">取消</button><span class="filter-title">筛选</span>
+      <button class="confirm fr">确认</button>
+    </header>
+    <div class="filter-content">
+      <div class="filter-item"><span class="item-title">端接的形式</span>
+        <div class="item-content">分 类分 类分 类 分 类</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+      <div class="filter-item"><span class="item-title">品牌</span>
+        <div class="item-content">Adapters  1.85mm to 1.85mm Adapte</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+      <div class="filter-item"><span class="item-title">端接形式</span>
+        <div class="item-content">Adapters  1.85mm to 1.85mm Adapte</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+      <div class="filter-item"><span class="item-title">端接的形式</span>
+        <div class="item-content">Adapters  1.85mm to 1.85mm Adapte</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+      <div class="filter-item"><span class="item-title">端形式</span>
+        <div class="item-content">Adapters  1.85mm to 1.85mm Adapte</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+      <div class="filter-item"><span class="item-title">端形式</span>
+        <div class="item-content">Adapters  1.85mm to 1.85mm Adapte</div><span class="icon"><img src="image/icon-filter-right.png"/></span>
+      </div>
+    </div>
+    <div class="clear">
+      <button>清除选项</button>
+    </div>
+  </div>
+</div>
+<div ng-class="{fadeIn: show,animated:show}" ng-show="show" class="mask"></div>

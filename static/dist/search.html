@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="appAnimations">
+  <!--引入样式文件-->
+  <!--引入js文件-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>搜索页</title>
+      <link rel="stylesheet" href="css/search.css">
+    <!-- endbuild-->
+  </head>
+  <body class="search">
+    <header><span class="language-change">EN</span>
+      <div class="search-wrap"><img src="image/icon-search-ser.png">
+        <input placeholder="输入型号/关键字" class="search-key">
+        <button class="cancel">取消</button>
+      </div>
+    </header>
+    <div class="record-title">
+      <div class="record-icon"><img src="image/icon-search-history.png">
+      </div><span>最近搜索记录取消</span>
+    </div>
+    <div class="record">
+      <div class="record-item">半刚/半柔电缆取消</div>
+      <div class="record-item">半刚/半柔电缆取消</div>
+      <div class="record-item">半刚/半柔电缆</div>
+    </div>
+    <div class="record">
+      <div class="record-item">半刚/半柔电缆</div>
+      <div class="record-item">半刚/半柔电缆</div>
+      <div class="record-item">半刚/半柔电缆</div>
+    </div>
+    <div class="record-clear">
+      <button class="clear">清除记录取消</button>
+    </div>
+    <footer>
+      <ul class="clearfix">
+        <li class="fl"><a href="index.html" class="home current"><img src="image/1.gif" class="img"><span>首页</span></a></li>
+        <li class="fl"><a href="product.html" class="category"><img src="image/1.gif" class="img"><span>分类</span></a></li>
+        <li class="fl"><a href="search.html" class="look"><img src="image/1.gif" class="img"><span>找货助手</span></a></li>
+        <li class="fl"><a href="filter.html" class="shop-cart"><img src="image/1.gif" class="img"><span>购物车</span></a></li>
+        <li class="fl"><a class="my"><img src="image/1.gif" class="img"><span>我的</span></a></li>
+      </ul>
+    </footer>
+      <script src="script/bower_components/angular/angular.js"></script>
+      <script src="script/animation.js"></script>
+  </body>
+</html>

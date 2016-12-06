@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="appAnimations">
+  <!--引入样式文件-->
+  <!--引入js文件-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>产品分类页</title>
+      <link rel="stylesheet" href="css/product-category.css">
+    <!-- endbuild-->
+  </head>
+  <body class="product-category">
+    <header><span class="language-change">EN</span>
+      <div class="search-wrap"><img src="image/icon-search-ser.png">
+        <input placeholder="输入种类/型号/规格" class="search-key">
+        <button class="cancel">筛选</button>
+      </div>
+    </header>
+    <div class="category-wrap">
+      <div id="category-tab" class="category-tab">
+        <ul>
+          <li class="tab current">Adapters</li>
+          <li class="tab">Connectors</li>
+          <li class="tab">Loads</li>
+          <li class="tab">Attenuators</li>
+          <li class="tab">Raw Cables</li>
+          <li class="tab">Flexible Cable</li>
+          <li class="tab">Adapters</li>
+          <li class="tab">Connectors</li>
+          <li class="tab">Loads</li>
+          <li class="tab">Attenuators</li>
+          <li class="tab">Raw Cables</li>
+          <li class="tab">Flexible</li>
+          <li class="tab">Connectors</li>
+          <li class="tab">Loads</li>
+          <li class="tab">Attenuators</li>
+          <li class="tab">Raw Cables</li>
+          <li class="tab">Flexible</li>
+          <li class="tab">Connectors</li>
+          <li class="tab">Loads</li>
+          <li class="tab">Attenuators</li>
+          <li class="tab">Raw Cables</li>
+          <li class="tab">Flexible Cable</li>
+        </ul>
+      </div>
+      <div class="category-content">
+        <ul>
+          <li>Pretty 1.85mm Adapters</li>
+          <li>Pretty 2.4mm Adapters</li>
+          <li>2.92mm Adapters</li>
+          <li>3.5mm Adapters</li>
+          <li>7/16 DIN Adapters</li>
+          <li>
+            SMA Adapters
+            N Adapters GPPO(Mini SMP)
+            Connectors  SMP Connectors
+          </li>
+          <li><img src="image/pic-prod-classify.png">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <ul class="clearfix">
+        <li class="fl"><a href="index.html" class="home current"><img src="image/1.gif" class="img"><span>首页</span></a></li>
+        <li class="fl"><a href="product.html" class="category"><img src="image/1.gif" class="img"><span>分类</span></a></li>
+        <li class="fl"><a href="search.html" class="look"><img src="image/1.gif" class="img"><span>找货助手</span></a></li>
+        <li class="fl"><a href="filter.html" class="shop-cart"><img src="image/1.gif" class="img"><span>购物车</span></a></li>
+        <li class="fl"><a class="my"><img src="image/1.gif" class="img"><span>我的</span></a></li>
+      </ul>
+    </footer>
+    <!--#wrapper
+    #scroller
+    	ul
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    		li Pretty row 1
+    -->
+      <script src="script/iscroll.js"></script>
+      <script src="script/jquery.min.js"></script>
+    <script>
+      $(function(){
+      	myScroll = new IScroll('#category-tab', { mouseWheel: true });
+      	//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+      	$('.tab').click(function(){
+      		alert(0);
+      		$('.tab').removeClass('current');
+      		$(this).addClass('current');
+      	});
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="appAnimations">
+  <!--引入样式文件-->
+  <!--引入js文件-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>筛选分类页</title>
+      <link rel="stylesheet" href="css/filter.css">
+      <link rel="stylesheet" href="css/accordion.css">
+    <!-- endbuild-->
+  </head>
+  <body class="filter-category">
+    <div ng-show="show" ng-model="show" class="filter-mask">
+      <div ng-class="{slideInRight: show,animated:show}" turn-page class="filter-wrap">
+        <header>
+          <button ng-click="show=!show" class="back fl"></button><span class="filter-title">筛选</span>
+        </header>
+        <ul id="accordion" class="accordion">
+          <li>
+            <div class="link all">All</div>
+          </li>
+          <li>
+            <div class="link">Adapters<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a class="selected">
+                  <p>Photoshop</p></a></li>
+              <li><a>
+                  <p>HTML</p></a></li>
+              <li><a>
+                  <p>CSS</p></a></li>
+              <li><a>
+                  <p>Maquetacion web</p></a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-paint-brush"></i>Diseño web<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a>
+                  <p>Photoshop</p></a></li>
+              <li><a>
+                  <p>HTML</p></a></li>
+              <li><a>
+                  <p>CSS</p></a></li>
+              <li><a>
+                  <p>Maquetacion webMaquetacion webMaquetacion webMaquetacion webMaquetacion webMaquetacion webMaquetacion webMaquetacion web</p></a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link">Adapters<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a class="selected">
+                  <p>Photoshop</p></a></li>
+              <li><a>
+                  <p>HTML</p></a></li>
+              <li><a>
+                  <p>CSS</p></a></li>
+              <li><a>
+                  <p>Maquetacion web</p></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div ng-class="{fadeIn: show,animated:show}" ng-show="show" class="mask"></div>
+    <footer>
+      <ul class="clearfix">
+        <li class="fl"><a href="index.html" class="home current"><img src="image/1.gif" class="img"><span>首页</span></a></li>
+        <li class="fl"><a href="product.html" class="category"><img src="image/1.gif" class="img"><span>分类</span></a></li>
+        <li class="fl"><a href="search.html" class="look"><img src="image/1.gif" class="img"><span>找货助手</span></a></li>
+        <li class="fl"><a href="filter.html" class="shop-cart"><img src="image/1.gif" class="img"><span>购物车</span></a></li>
+        <li class="fl"><a class="my"><img src="image/1.gif" class="img"><span>我的</span></a></li>
+      </ul>
+    </footer>
+      <script src="script/jquery.min.js"></script>
+      <script src="script/accordion.js"></script>
+  </body>
+</html>

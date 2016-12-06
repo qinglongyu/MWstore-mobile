@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="appAnimations">
+  <!--引入样式文件-->
+  <!--引入js文件-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>首页</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- endbuild-->
+  </head>
+  <body class="index">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/pic-home-banner.jpg">
+        </div>
+        <div class="swiper-slide"><img src="image/pic-home-banner.jpg">
+        </div>
+        <div class="swiper-slide"><img src="image/pic-home-banner.jpg">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="mask">
+        <form class="search-wrap"><span class="language-change">EN</span>
+          <input placeholder="输入型号与关键字" class="search-key">
+        </form>
+      </div>
+    </div>
+    <div class="service-category">
+      <ul class="clearfix">
+        <li class="fl"><a class="my-attention"><img src="image/icon-home-attention-80x88.png"><span>我的关注</span></a></li>
+        <li class="fl"><a class="my-order"><img src="image/icon-home--order.png"><span>我的订单</span></a></li>
+        <li class="fl"><a href="product-category.html" class="my-find-order"><img src="image/icon-home-look.png"><span>我的找货单</span></a></li>
+        <li class="fl"><a href="filter-category.html" class="my-score"><img src="image/icon-home-PV.png"><span>我的积分</span></a></li>
+      </ul>
+    </div>
+    <div class="brand">
+      <ul class="clearfix">
+        <li class="fl"><a><img src="image/pic-home-brand1.png"></a></li>
+        <li class="fl"><a><img src="image/pic-home-brand2.png"></a></li>
+        <li class="fl"><a><img src="image/pic-home-brand3.png"></a></li>
+      </ul>
+      <ul class="clearfix">
+        <li class="fl"><img src="image/pic-home-brand4.jpg">
+        </li>
+        <li class="fl"><img src="image/pic-home-brand5.png">
+        </li>
+        <li class="fl"><img src="image/pic-home-brand6.png">
+        </li>
+      </ul>
+    </div>
+    <div class="product-category-title"><span>产品分类</span></div>
+    <div class="product-category">
+      <ul class="clearfix">
+        <li class="fl"><a><img src="image/product-category1.jpg"><span>转接器</span></a></li>
+        <li class="fl"><a><img src="image/product-category2.jpg"><span>负载</span></a></li>
+        <li class="fl"><a><img src="image/product-category3.jpg"><span>转接器</span></a></li>
+      </ul>
+      <ul class="clearfix">
+        <li class="fl"><a><img src="image/product-category1.jpg"><span>转接器</span></a></li>
+        <li class="fl"><a><img src="image/product-category2.jpg"><span>负载</span></a></li>
+        <li class="fl"><a><img src="image/product-category3.jpg"><span>转接器</span></a></li>
+      </ul>
+    </div>
+    <footer>
+      <ul class="clearfix">
+        <li class="fl"><a href="index.html" class="home current"><img src="image/1.gif" class="img"><span>首页</span></a></li>
+        <li class="fl"><a href="product.html" class="category"><img src="image/1.gif" class="img"><span>分类</span></a></li>
+        <li class="fl"><a href="search.html" class="look"><img src="image/1.gif" class="img"><span>找货助手</span></a></li>
+        <li class="fl"><a href="filter.html" class="shop-cart"><img src="image/1.gif" class="img"><span>购物车</span></a></li>
+        <li class="fl"><a class="my"><img src="image/1.gif" class="img"><span>我的</span></a></li>
+      </ul>
+    </footer>
+      <script src="script/libs/swiper-3.0.2/dist/js/swiper.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+      	width:300,
+      	height:300,
+      	speed: 400,
+      	pagination: '.swiper-pagination',
+      	paginationClickable: true
+      });
+    </script>
+  </body>
+</html>
